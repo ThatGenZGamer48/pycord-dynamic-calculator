@@ -192,4 +192,12 @@ async def _startcalc(ctx):
     view = CalcView()
     await ctx.respond("Started calculator", view=view)
 
+@bot.command(
+    name="startcalc",
+    description="Starts the dynamic calculator.",
+)
+async def _command_startcalc(ctx):
+    view = CalcView()
+    await ctx.send("Started calculator", view=view)
+
 bot.run(TOKEN)
