@@ -6,7 +6,7 @@ import json
 
 load_dotenv()
 
-with open("../config.json", "r") as f:
+with open("config.json", "r") as f:
     config_data = json.load(f)
     
 GUILD_IDS = config_data["guild_ids"]
